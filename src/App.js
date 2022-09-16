@@ -2,9 +2,10 @@ import './App.css';
 import React,{useEffect, useState} from 'react';
 
 function App() {
-  const [items, setItems] = useState(['Jouni', 'Pekka', 'Keskuu', 'Dessame'])
+  const [items, setItems] = useState([])
 
   useEffect(() => {
+    setItems(['Jouni', 'Pekka', 'Keskuu', 'Dessame'])
     console.log(items)
   },[])
 
